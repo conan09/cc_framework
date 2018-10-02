@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "1773f87e-025e-47f5-828f-9954f49d7c01",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "icon_laoguji_tili": {
+      "ver": "1.0.3",
+      "uuid": "2e3da291-a396-411d-a469-122afd6a50bd",
+      "rawTextureUuid": "1773f87e-025e-47f5-828f-9954f49d7c01",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 11,
+      "trimY": 6,
+      "width": 124,
+      "height": 123,
+      "rawWidth": 146,
+      "rawHeight": 136,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

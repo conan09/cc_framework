@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "fe5efb6d-adc6-4d14-847b-b7bec3e904e0",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "btn_tili_anxia": {
+      "ver": "1.0.3",
+      "uuid": "32cba8df-9397-4c5e-b460-d728a4270784",
+      "rawTextureUuid": "fe5efb6d-adc6-4d14-847b-b7bec3e904e0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 11,
+      "trimY": 10,
+      "width": 81,
+      "height": 79,
+      "rawWidth": 103,
+      "rawHeight": 100,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

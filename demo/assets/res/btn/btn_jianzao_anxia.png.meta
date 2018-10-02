@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "cb684c61-29dd-46ca-9bd3-9352e4b36a0e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "btn_jianzao_anxia": {
+      "ver": "1.0.3",
+      "uuid": "53cac97b-24a5-48b9-9d73-bbe026191920",
+      "rawTextureUuid": "cb684c61-29dd-46ca-9bd3-9352e4b36a0e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 15,
+      "trimY": 15,
+      "width": 107,
+      "height": 108,
+      "rawWidth": 137,
+      "rawHeight": 138,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "703686b6-c989-468b-840b-d80256400e6e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "icon_laoguji_gongji": {
+      "ver": "1.0.3",
+      "uuid": "c4438857-a1d6-43a9-b4c7-c925ba2b0a59",
+      "rawTextureUuid": "703686b6-c989-468b-840b-d80256400e6e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 111,
+      "height": 134,
+      "rawWidth": 111,
+      "rawHeight": 134,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0036d3b2-2afa-4068-88d6-7caf2bc63d46",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "jindu_bg_denglu": {
+      "ver": "1.0.3",
+      "uuid": "93db760c-ba9a-44df-a58b-b1b682c594eb",
+      "rawTextureUuid": "0036d3b2-2afa-4068-88d6-7caf2bc63d46",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 56,
+      "height": 44,
+      "rawWidth": 56,
+      "rawHeight": 44,
+      "borderTop": 12,
+      "borderBottom": 12,
+      "borderLeft": 12,
+      "borderRight": 12,
+      "subMetas": {}
+    }
+  }
+}

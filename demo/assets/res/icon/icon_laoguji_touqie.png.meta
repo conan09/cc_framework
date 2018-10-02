@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a21b2588-e519-4f02-aa4d-0867d351b4ef",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "icon_laoguji_touqie": {
+      "ver": "1.0.3",
+      "uuid": "8434519a-bbe2-4f31-a87b-95a440596590",
+      "rawTextureUuid": "a21b2588-e519-4f02-aa4d-0867d351b4ef",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 146,
+      "height": 136,
+      "rawWidth": 146,
+      "rawHeight": 136,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

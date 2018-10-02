@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "d8ac45d1-eb0e-4eb8-8117-d82faecc49f6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "btn_tili_zhengchang": {
+      "ver": "1.0.3",
+      "uuid": "349c1ddc-ebc1-4a2c-9ced-3b0ee79754a9",
+      "rawTextureUuid": "d8ac45d1-eb0e-4eb8-8117-d82faecc49f6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0.5,
+      "trimX": 7,
+      "trimY": 6,
+      "width": 90,
+      "height": 87,
+      "rawWidth": 103,
+      "rawHeight": 100,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

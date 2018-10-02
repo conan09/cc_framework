@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "489f474f-dd81-4747-acc7-5e0f87f1f176",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "xiujian_bg_2_shuye": {
+      "ver": "1.0.3",
+      "uuid": "e2535bfb-546b-4d99-9609-cc4cce044944",
+      "rawTextureUuid": "489f474f-dd81-4747-acc7-5e0f87f1f176",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 49,
+      "height": 69,
+      "rawWidth": 49,
+      "rawHeight": 69,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
