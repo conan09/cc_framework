@@ -17,6 +17,12 @@
      VILLAGE_BUILD_NODE : "prefabs/pre_village_build",
  };
 
+ GameConst.PREFAB_CTRL_ENUM = {
+     CLOUD_NODE_CTRL: "CloudItem",
+     TIPS_NODE_CTRL: "ctrl_tips_node",
+     VILLAGE_BUILD_NODE_CTRL: "ctrl_village_build_node"
+ }
+
  GameConst.BGM_ENU = {
     [GameConst.SCENE_ENUM.INIT_SCENE]    : "bgm_mainScene",
     [GameConst.SCENE_ENUM.LOTTERY_MAIN]  : "bgm_mainScene",
