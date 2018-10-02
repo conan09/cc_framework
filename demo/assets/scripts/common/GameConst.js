@@ -29,3 +29,23 @@
     [GameConst.SCENE_ENUM.VILLAGE_MAIN]  : "bgm_mainScene",
     [GameConst.SCENE_ENUM.VILLAGE_BUILD] : "bgm_mainScene",
  }
+
+ /////////////////////////////////////////////////////////////////////////////////
+
+ GameConst.PRELOADLIST = {};
+ GameConst.PRELOADLIST[GameConst.SCENE_ENUM.INIT_SCENE] = [
+    GameConst.PREFAB_ENUM.CLOUD_NODE,
+    GameConst.PREFAB_ENUM.TIPS_NODE,
+    GameConst.PREFAB_ENUM.VILLAGE_BUILD_NODE,
+
+    //scene
+    // GameConst.SCENE_TYPE.LOGO_SHOW,
+    GameConst.SCENE_ENUM.LOTTERY_MAIN,
+    GameConst.SCENE_ENUM.VILLAGE_MAIN,
+ ];
+
+ GameConst.PRELOADLIST[GameConst.SCENE_ENUM.LOTTERY_MAIN] = [
+ ];
+
+ GameConst.PRELOADLIST[GameConst.SCENE_ENUM.VILLAGE_MAIN] = [
+ ];
