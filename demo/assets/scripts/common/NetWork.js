@@ -1,7 +1,12 @@
-var NetWork =  cc.Class.extend({
-    netHandler : null, //实例
-    url : "http://10.246.107.21/root/",//内网
-    // url: "https://fbgame.gameabc2.com/root/",//外网facebook
+var NetWork =  cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        netHandler : null, //实例
+        url : "http://10.246.107.21/root/",//内网
+        // url: "https://fbgame.gameabc2.com/root/",//外网facebook
+    },
+
  
     ctor : function(){
     },
