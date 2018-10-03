@@ -6,9 +6,9 @@
 
  GameConst.SCENE_ENUM = {
      INIT_SCENE     : "InitScene",
-     LOTTERY_MAIN   : "lottery_main",
-     VILLAGE_MAIN   : "village_main",
-     VILLAGE_BUILD  : "village_build",
+     LOTTERY_MAIN   : "scenes/lottery_main",
+     VILLAGE_MAIN   : "scenes/village_main",
+     VILLAGE_BUILD  : "scenes/village_build",
  };
 
  GameConst.PREFAB_ENUM = {
@@ -29,6 +29,15 @@
     [GameConst.SCENE_ENUM.VILLAGE_MAIN]  : "bgm_mainScene",
     [GameConst.SCENE_ENUM.VILLAGE_BUILD] : "bgm_mainScene",
  }
+
+ /////////////////////////////////////////////////////////////////////////////////
+
+ GameConst.CLOUD_STATUS = {
+     CLUSTER : 0,   // 云聚集
+     SPREAD  : 1,   // 云散开
+ }
+
+ GameConst.DESIGN_SIZE = cc.size(750, 1134);
 
  /////////////////////////////////////////////////////////////////////////////////
 
