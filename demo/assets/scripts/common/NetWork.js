@@ -1,8 +1,7 @@
-var NetWork =  cc.Class({
+var Http =  cc.Class({
     extends: cc.Component,
 
     properties: {
-        netHandler : null, //实例
         url : "http://10.246.107.21/root/",//内网
         // url: "https://fbgame.gameabc2.com/root/",//外网facebook
     },
@@ -118,6 +117,10 @@ var NetWork =  cc.Class({
 
 /////////////////////////////////////////////////////////////////////////////////
  
+;window.NetWork = window.NetWork || {    
+    netHandler : null, //实例
+}
+
 //消息请求类型
 NetWork.NET_STATE = {
     STATE_ERROR: 0,
@@ -128,7 +131,7 @@ NetWork.NET_STATE = {
 //获取网络实例
 NetWork.GetInstance = function() {
     if (NetWork.netHandler == null) {
-        NetWork.netHandler = new NetWork();
+        NetWork.netHandler = new Http();
     }
     return NetWork.netHandler;
 };
