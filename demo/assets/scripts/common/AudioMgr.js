@@ -70,14 +70,14 @@ AudioMgr.MusicOn = function(flag){
 //////////////////////////////////////////////////////////////////////
 
 AudioMgr.PlaySound = function(soundName, isLoop/*false*/){
-    if(!sfx_on){
+    if(!this.sfx_on){
         return;
     }
     if(isLoop == "undefined" || isLoop == null){
         isLoop = false;
     }
     Utils.LoadRes(this.sfxPath + soundName, cc.AudioClip, (err, ret)=>{
-        var audioID = cc.audioEngine.playEffect(ret, isloop);
+        var audioID = cc.audioEngine.playEffect(ret, isLoop);
         return audioID;
     });
 }
@@ -91,21 +91,21 @@ AudioMgr.StopAllSounds = function(){
 }
 
 AudioMgr.PauseSound = function(audioID){
-    if(!AudioMgr.sfx_on || !audioID){
+    if(!this.sfx_on || !audioID){
         return;
     }
     cc.audioEngine.pauseEffect(audioID);
 }
 
 AudioMgr.PauseAllSounds = function(){
-    if(false == AudioMgr.sfx_on){
+    if(false == this.sfx_on){
         return;
     }
     cc.audioEngine.pauseAllEffects();
 }
 
 AudioMgr.ResumeSound = function(audioID){
-    if(!AudioMgr.sfx_on || !audioID){
+    if(!this.sfx_on || !audioID){
         return;
     }
     cc.audioEngine.resumeEffect(audioID);
@@ -113,7 +113,7 @@ AudioMgr.ResumeSound = function(audioID){
 
 
 AudioMgr.ResumeAllSounds = function(){
-    if(false == AudioMgr.sfx_on){
+    if(false == this.sfx_on){
         return;
     }
     cc.audioEngine.resumeAllEffects();
