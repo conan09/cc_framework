@@ -24,7 +24,7 @@
      VILLAGE_BUILD_NODE_CTRL: "ctrl_village_build_node"
  }
 
- GameConst.BGM_ENU = {
+ GameConst.BGM_ENUM = {
     [GameConst.SCENE_ENUM.INIT_SCENE]    : "bgm_mainScene",
     [GameConst.SCENE_ENUM.LOTTERY_MAIN]  : "bgm_mainScene",
     [GameConst.SCENE_ENUM.VILLAGE_MAIN]  : "bgm_mainScene",
@@ -39,6 +39,12 @@
  }
 
  GameConst.DESIGN_SIZE = cc.size(750, 1134)
+
+
+ // ui音效
+ GameConst.UISOUND = {
+     TOUCH_SFX = "ding",
+ }
 
  /////////////////////////////////////////////////////////////////////////////////
 
