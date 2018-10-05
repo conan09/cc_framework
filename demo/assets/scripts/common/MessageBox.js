@@ -26,15 +26,19 @@ cc.Class({
     },
 
     start () {
-
+        this.callback = null;
     },
 
     onDestroy() {
+        if(this.callback){
+            this.callback();
+        }
     },
 
-    SetMsg : function(msg, warn){
+    SetMsg : function(msg, warn, callback){
         this.lbl_msg.string = msg;
         this.lbl_warn.string = warn || "";
+        this.callback = callback;
     },
 
     CloseMsgBox : function(){

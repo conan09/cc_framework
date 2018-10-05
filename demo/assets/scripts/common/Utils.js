@@ -13,10 +13,10 @@ Utils.LoadRes = function(url, type, callback){
 }
 
 
-Utils.ShowMsgBox = function(msg, warn){
+Utils.ShowMsgBox = function(msg, warn, callback){
     Utils.LoadRes(GameConst.PREFAB_ENUM.MSG_BOX, cc.Prefab, (err, ret)=>{
         let msgbox = cc.instantiate(ret);
-        msgbox.getComponent("MessageBox").SetMsg(msg, warn);
+        msgbox.getComponent("MessageBox").SetMsg(msg, warn, callback);
         msgbox.parent = SceneMgr.GetCurrentScene().getChildByName("Canvas");
         msgbox.position = cc.v2(0, 0);
     })
