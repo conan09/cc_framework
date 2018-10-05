@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "28373cce-6675-4175-9827-17dc6f019711",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "yangcheng_shengpin_xinxi_bg": {
+      "ver": "1.0.3",
+      "uuid": "b33156da-0936-4894-a5b4-6d0734595c30",
+      "rawTextureUuid": "28373cce-6675-4175-9827-17dc6f019711",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 114,
+      "height": 78,
+      "rawWidth": 114,
+      "rawHeight": 78,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 27,
+      "borderRight": 27,
+      "subMetas": {}
+    }
+  }
+}
