@@ -18,5 +18,6 @@ cc.Class({
 
     onBtnClickVillage : function(event, param){
         cc.log("btn click -------------->");
+        Utils.ShowMsgBox("this is test");
     }
 });

@@ -25,7 +25,8 @@
     cc.director.loadScene(sceneName, () => {
         cc.log("Scene [ %s ] loaded success", sceneName);
         this.prevSceneName = this.currentScene.sceneName;
-        this.currentScene.sceneName = sceneName;
+        this.InitScene(sceneName);
+        AudioMgr.PlayMusic(GameConst.BGM_ENU[sceneName]);
         if(callback){
             callback();
         }
@@ -85,9 +86,9 @@ SceneMgr.PreLoadRes = function(prodFunc, completeFunc){
 }
 
 SceneMgr.GetCurrentScene = function(){
-    return SceneMgr.currentScene.sceneName;
+    return SceneMgr.currentScene;
 }
 
-SceneMgr.GetPrevScene = function(){
+SceneMgr.GetPrevSceneName = function(){
     return SceneMgr.prevSceneName;
 }

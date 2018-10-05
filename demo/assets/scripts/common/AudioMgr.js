@@ -15,8 +15,10 @@
 
 //////////////////////////////////////////////////////////////////////
 
+ //////////////////////////////////////////////////////////////////////
+
 AudioMgr.PlayMusic = function(musicType, isLoop/* isLoop = ture*/){
-    if(!this.music_on ||(current_music === musicType)){
+    if(!this.music_on ||(this.current_music === musicType)){
         return;
     }
     if(!isLoop){
@@ -25,7 +27,7 @@ AudioMgr.PlayMusic = function(musicType, isLoop/* isLoop = ture*/){
     if(isLoop){
         this.prev_music = this.current_music;
     }
-    Utils.LoadRes(bgmPath+musicType, cc.AudioClip, (err, ret)=>{
+    Utils.LoadRes(this.bgmPath+musicType, cc.AudioClip, (err, ret)=>{
         AudioMgr.StopMusic();
         cc.audioEngine.playMusic(ret, isLoop);
         this.current_music = musicType;
@@ -52,18 +54,18 @@ AudioMgr.ResumeMusic = function(){
 }
 
 AudioMgr.IsMusicPlaying = function(){
-    return AudioMgr.music_on;
+    return this.music_on;
 }
 
 AudioMgr.MusicOn = function(flag){
     if(true == flag){
-        AudioMgr.music_on = flag;
+        this.music_on = flag;
         if(this.prev_music){
             AudioMgr.PlayMusic(this.prev_music);
         }
     }else{
         AudioMgr.StopMusic();
-        AudioMgr.music_on = flag;
+        this.music_on = flag;
     }
 }
 

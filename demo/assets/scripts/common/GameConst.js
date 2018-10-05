@@ -6,15 +6,16 @@
 
  GameConst.SCENE_ENUM = {
      INIT_SCENE     : "InitScene",
-     LOTTERY_MAIN   : "scenes/lottery_main",
-     VILLAGE_MAIN   : "scenes/village_main",
-     VILLAGE_BUILD  : "scenes/village_build",
+     LOTTERY_MAIN   : "lottery_main",
+     VILLAGE_MAIN   : "village_main",
+     VILLAGE_BUILD  : "village_build",
  };
 
  GameConst.PREFAB_ENUM = {
      CLOUD_NODE         : "prefabs/pre_cloud_node",
      TIPS_NODE          : "prefabs/pre_tips_node",
      VILLAGE_BUILD_NODE : "prefabs/pre_village_build",
+     MSG_BOX            : "prefabs/messageBox",
  };
 
  GameConst.PREFAB_CTRL_ENUM = {
