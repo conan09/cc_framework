@@ -2210,9 +2210,15 @@
       "__id__": 5
     },
     "_enabled": true,
-    "sceneName": "",
-    "isCloudIn": false,
-    "isCloudOut": false,
+    "bgm": {
+      "__uuid__": "e28d5db3-4c43-4b5e-a4b1-06d3b217d039"
+    },
+    "sceneName": "lottery_main",
+    "cloudNode": {
+      "__uuid__": "fb30da6b-ddcb-4003-a020-3a3c57635452"
+    },
+    "isCloudIn": true,
+    "isCloudOut": true,
     "btn_village": {
       "__id__": 45
     },
