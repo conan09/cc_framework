@@ -5119,156 +5119,15 @@
     "_id": "653tZ+0ctH1KZTEzgq9NFl"
   },
   {
-    "__type__": "41dffU3DXpN6b1+dTEjY3aM",
+    "__type__": "5cb0850PgdEWZQB2X5b0SBo",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 5
     },
     "_enabled": true,
-    "label_money_num": {
-      "__id__": 78
-    },
-    "label_star_cur": {
-      "__id__": 94
-    },
-    "img_def_1": {
-      "__id__": 88
-    },
-    "img_def_2": {
-      "__id__": 90
-    },
-    "img_def_3": {
-      "__id__": 92
-    },
-    "btn_money": {
-      "__id__": 80
-    },
-    "btn_spins": {
-      "__id__": 84
-    },
-    "btn_menu": {
-      "__id__": 74
-    },
-    "img_user_bg": {
-      "__id__": 101
-    },
-    "img_user_pic": {
-      "__id__": 98
-    },
-    "label_user_name": {
-      "__id__": 100
-    },
-    "btn_build": {
-      "__id__": 104
-    },
-    "btn_lottery": {
-      "__id__": 108
-    },
-    "img_build_bg": {
-      "__id__": 7
-    },
-    "img_build_land": {
-      "__id__": 19
-    },
-    "img_star_land": [
-      {
-        "__id__": 14
-      },
-      {
-        "__id__": 12
-      },
-      {
-        "__id__": 16
-      },
-      {
-        "__id__": 10
-      },
-      {
-        "__id__": 18
-      }
-    ],
-    "img_build_house": {
-      "__id__": 31
-    },
-    "img_star_house": [
-      {
-        "__id__": 26
-      },
-      {
-        "__id__": 24
-      },
-      {
-        "__id__": 28
-      },
-      {
-        "__id__": 22
-      },
-      {
-        "__id__": 30
-      }
-    ],
-    "img_build_boat": {
-      "__id__": 43
-    },
-    "img_star_boat": [
-      {
-        "__id__": 38
-      },
-      {
-        "__id__": 36
-      },
-      {
-        "__id__": 40
-      },
-      {
-        "__id__": 34
-      },
-      {
-        "__id__": 42
-      }
-    ],
-    "img_build_animal": {
-      "__id__": 55
-    },
-    "img_star_animal": [
-      {
-        "__id__": 50
-      },
-      {
-        "__id__": 48
-      },
-      {
-        "__id__": 52
-      },
-      {
-        "__id__": 46
-      },
-      {
-        "__id__": 54
-      }
-    ],
-    "img_build_totem": {
-      "__id__": 67
-    },
-    "img_star_totem": [
-      {
-        "__id__": 62
-      },
-      {
-        "__id__": 60
-      },
-      {
-        "__id__": 64
-      },
-      {
-        "__id__": 58
-      },
-      {
-        "__id__": 66
-      }
-    ],
-    "_id": "ecXYLNSHFBy4V8/rck/TPM"
+    "btn_village": null,
+    "_id": "dcaQplBD1I0KOMdo+W+icG"
   },
   {
     "__type__": "cc.Canvas",

@@ -58,8 +58,4 @@
     },
 
     update (dt) {},
-
-    ShowCloud = function(){
-        
-    }
 });
