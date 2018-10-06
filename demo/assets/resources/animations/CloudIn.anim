@@ -1,0 +1,87 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "CloudIn",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "img_cloud_up": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 1334
+            },
+            {
+              "frame": 0.25,
+              "value": 934
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 934
+            }
+          ]
+        }
+      },
+      "img_cloud_down": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 400
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 400
+            }
+          ]
+        }
+      },
+      "img_cloud_left": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 400
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 400
+            }
+          ]
+        }
+      },
+      "img_cloud_right": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 750
+            },
+            {
+              "frame": 0.25,
+              "value": 350
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 350
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

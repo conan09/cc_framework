@@ -15,50 +15,69 @@
         btn_out: cc.Button,
     },
 
+    ctor () {
+        this.status = null;
+        this.callback = null;
+    },
+
     onLoad () {
         this.animDurration = 0.5;
+        this.node.getComponent(cc.Animation).on('finished', this.onFinished, this);
+    },
+
+    onDestroy () {
+        this.node.getComponent(cc.Animation).off('finished', this.onFinished, this);
+    },
+
+    onFinished () {
+        if(this.callback){
+            this.callback();
+        }
     },
 
     /**
      * @param {Number} status =CLUSTER，云切入，=SPREAD，云切出
-     * @param {function} callBack 动画结束后的回调
+     * @param {function} callback 动画结束后的回调
      */
-    showCloud: function(status, callBack){
-        let anim_time = this.animDurration;
+    showCloud: function(status, callback){
+        // let anim_time = this.animDurration;
+        this.callback = callback;
         if(GameConst.CLOUD_STATUS.SPREAD == status){
-            this.img_cloud_up.node.position = cc.v2(this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height - this.img_cloud_up.node.height);
-            this.img_cloud_down.node.position =cc.v2(this.img_cloud_down.node.x, this.img_cloud_down.node.height);
-            this.img_cloud_left.node.position = cc.v2(this.img_cloud_left.node.height, this.img_cloud_left.node.y);
-            this.img_cloud_right.node.position = cc.v2(GameConst.DESIGN_SIZE.width - this.img_cloud_right.node.height, this.img_cloud_right.node.y);
+            // this.img_cloud_up.node.position = cc.v2(this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height - this.img_cloud_up.node.height);
+            // this.img_cloud_down.node.position =cc.v2(this.img_cloud_down.node.x, this.img_cloud_down.node.height);
+            // this.img_cloud_left.node.position = cc.v2(this.img_cloud_left.node.height, this.img_cloud_left.node.y);
+            // this.img_cloud_right.node.position = cc.v2(GameConst.DESIGN_SIZE.width - this.img_cloud_right.node.height, this.img_cloud_right.node.y);
 
-            this.img_cloud_up.node.runAction(cc.moveTo(anim_time, this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height));
-            this.img_cloud_down.node.runAction(cc.moveTo(anim_time, this.img_cloud_down.node.x, 0));
-            this.img_cloud_left.node.runAction(cc.moveTo(anim_time, 0, this.img_cloud_left.node.y));
-            this.img_cloud_right.node.runAction(cc.sequence(
-                cc.moveTo(anim_time, GameConst.DESIGN_SIZE.width, this.img_cloud_right.node.y),
-                cc.callFunc(()=>{
-                    if (callBack) {
-                        callBack();
-                    }
-                }),
-            ));   
+            // this.img_cloud_up.node.runAction(cc.moveTo(anim_time, this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height));
+            // this.img_cloud_down.node.runAction(cc.moveTo(anim_time, this.img_cloud_down.node.x, 0));
+            // this.img_cloud_left.node.runAction(cc.moveTo(anim_time, 0, this.img_cloud_left.node.y));
+            // this.img_cloud_right.node.runAction(cc.sequence(
+            //     cc.moveTo(anim_time, GameConst.DESIGN_SIZE.width, this.img_cloud_right.node.y),
+            //     cc.callFunc(()=>{
+            //         if (callBack) {
+            //             callBack();
+            //         }
+            //     }),
+            // )); 
+            this.node.getComponent(cc.Animation).play("CloudOut");
         } else {
-            this.img_cloud_up.node.position = cc.v2(this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height);
-            this.img_cloud_down.node.position = cc.v2(this.img_cloud_down.node.x, 0);
-            this.img_cloud_left.node.position = cc.v2(0, this.img_cloud_left.node.y);
-            this.img_cloud_right.node.position = cc.v2(GameConst.DESIGN_SIZE.width, this.img_cloud_right.node.y);
+            // this.img_cloud_up.node.position = cc.v2(this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height);
+            // this.img_cloud_down.node.position = cc.v2(this.img_cloud_down.node.x, 0);
+            // this.img_cloud_left.node.position = cc.v2(0, this.img_cloud_left.node.y);
+            // this.img_cloud_right.node.position = cc.v2(GameConst.DESIGN_SIZE.width, this.img_cloud_right.node.y);
 
-            this.img_cloud_up.node.runAction(cc.moveTo(anim_time, this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height - this.img_cloud_up.node.height));
-            this.img_cloud_down.node.runAction(cc.moveTo(anim_time, this.img_cloud_down.node.x, this.img_cloud_down.node.height));
-            this.img_cloud_left.node.runAction(cc.moveTo(anim_time, this.img_cloud_left.node.height, this.img_cloud_left.node.y));
-            this.img_cloud_right.node.runAction(cc.sequence(
-                cc.moveTo(anim_time, GameConst.DESIGN_SIZE.width - this.img_cloud_right.node.height, this.img_cloud_right.node.y),
-                cc.callFunc(()=>{
-                    if (callBack) {
-                        callBack();
-                    }
-                }),
-            )); 
+            // this.img_cloud_up.node.runAction(cc.moveTo(anim_time, this.img_cloud_up.node.x, GameConst.DESIGN_SIZE.height - this.img_cloud_up.node.height));
+            // this.img_cloud_down.node.runAction(cc.moveTo(anim_time, this.img_cloud_down.node.x, this.img_cloud_down.node.height));
+            // this.img_cloud_left.node.runAction(cc.moveTo(anim_time, this.img_cloud_left.node.height, this.img_cloud_left.node.y));
+            // this.img_cloud_right.node.runAction(cc.sequence(
+            //     cc.moveTo(anim_time, GameConst.DESIGN_SIZE.width - this.img_cloud_right.node.height, this.img_cloud_right.node.y),
+            //     cc.callFunc(()=>{
+            //         if (callBack) {
+            //             callBack();
+            //         }
+            //     }),
+            // )); 
+            this.node.getComponent(cc.Animation).play("CloudIn");
         }
     },
 });
