@@ -1,5 +1,5 @@
 require("./Global");
-require("./GameConst");
+require("./UserConst");
 require("./UIKit");
 require("./NetWork");
 require("./EventMgr");
