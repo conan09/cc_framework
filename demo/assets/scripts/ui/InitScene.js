@@ -2,35 +2,32 @@
  * 初始化场景 进入游戏的第一个场景
  */
 
- require("Common");
+ require("../common/UserGlobal");
 
 cc.Class({
-    extends: cc.Component,
+    extends: SceneBase,
 
     properties: {
         img_logo : cc.Sprite,
         prog_bar : cc.ProgressBar,
     },
 
-    // 构造函数
-    ctor : function() {
-        
-    },
-
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        SceneBase.prototype.onLoad.call(this);
+
         this.img_logo.node.opacity = 0;
         this.img_logo.node.scale = 4;
         this.img_logo.node.active = false;
 
         this.prog_bar.node.active = false;
         this.prog_bar.progress = 0;
-        //
-        SceneMgr.InitScene(GameConst.SCENE_ENUM.INIT_SCENE);
     },
 
     start () {
+        SceneBase.prototype.start.call(this);
+
         this.img_logo.node.active = true;
         this.img_logo.node.runAction(
             cc.spawn(
@@ -54,10 +51,10 @@ cc.Class({
         this.prog_bar.node.active = true;
         this.prog_bar.progress = 0;
         //
-        SceneMgr.PreLoadRes((completedCount, totalCount, resList)=>{
+        UIKit.PreLoadRes(UserConst.PRELOADLIST[UserConst.SCENE_ENUM.INIT_SCENE], (completedCount, totalCount, resList)=>{
             this.prog_bar.progress = completedCount / totalCount;
         }, (err, resList)=>{
-            SceneMgr.EnterScene(GameConst.SCENE_ENUM.LOTTERY_MAIN, GameConst.CLOUD_STATUS.CLUSTER);
+            this.GotoScene("", UserConst.SCENE_ENUM.LOTTERY_MAIN)
         })
     },
 });

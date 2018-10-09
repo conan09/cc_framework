@@ -1,6 +1,6 @@
 
 cc.Class({
-    extends: cc.Component,
+    extends: SceneBase,
 
     properties: {
         btn_village : cc.Button,

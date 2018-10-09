@@ -5,7 +5,7 @@
  * ShowCloudIn/Out为场景切入切出动画
  */
 
-cc.Class({
+;window.SceneBase = cc.Class({
     extends: cc.Component,
 
     properties: {
@@ -13,7 +13,7 @@ cc.Class({
             default : null,
             type : cc.AudioClip,
         },
-        currentSceneName : "",
+        prevSceneName : "",
         nextSceneName : "",
         isCloudIn : false,
         isCloudOff : false,
@@ -23,8 +23,6 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.prevSceneName = "";
-        this.currentScene  = cc.director.getScene();
         this.cloudNode = cc.instantiate(this.cloudPrefab);
         //
         if(this.bgm){
@@ -37,29 +35,22 @@ cc.Class({
 
     update (dt) {},
 
-    GotoScene : function(sceneName){
+    GotoScene : function(event, sceneName){
         sceneName = sceneName || this.nextSceneName;
         this.ShowCloudIn(()=>{
             cc.director.loadScene(sceneName, () => {
                 cc.log("Scene [ %s ] loaded success", sceneName);
-                this.prevSceneName = this.currentSceneName;
-                this.currentSceneName = sceneName;
-                if(callback){
-                    callback();
-                }
+                // this.currentSceneName = sceneName;
             })
         })
     },
 
     BackScene : function(){
         if(this.prevSceneName){
+            let prevSceneName = this.prevSceneName;
             cc.director.loadScene(this.prevSceneName, () => {
                 cc.log("Scene [ %s ] loaded success", sceneName);
-                this.prevSceneName = "";
-                this.currentSceneName = sceneName;
-                if(callback){
-                    callback();
-                }
+                // this.currentSceneName = prevSceneName;
             })            
         }
     },
@@ -67,7 +58,7 @@ cc.Class({
     ShowCloudIn : function(callback){
         if(this.isCloudIn){            
             this.cloudNode.active = true
-            this.cloudNode.parent = this.currentScene.getChildByName('Canvas');
+            this.cloudNode.parent = cc.director.getScene().getChildByName('Canvas');
             this.cloudNode.position = cc.v2(-VISIBLE_SIZE.width/2, -VISIBLE_SIZE.height/2);
             this.cloudNode.getComponent(UserConst.PREFAB_CTRL_ENUM.CLOUD_NODE_CTRL).showCloud(UserConst.CLOUD_STATUS.CLUSTER, () => {
                 this.cloudNode.active = false;
@@ -82,7 +73,7 @@ cc.Class({
     ShowCloudOut : function(callback){
         if(this.isCloudOut){            
             this.cloudNode.active = true
-            this.cloudNode.parent = this.currentScene.getChildByName('Canvas');
+            this.cloudNode.parent = cc.director.getScene().getChildByName('Canvas');
             this.cloudNode.position = cc.v2(-VISIBLE_SIZE.width/2, -VISIBLE_SIZE.height/2);
             this.cloudNode.getComponent(UserConst.PREFAB_CTRL_ENUM.CLOUD_NODE_CTRL).showCloud(UserConst.CLOUD_STATUS.SPREAD, () => {
                 this.cloudNode.active = false;

@@ -5,7 +5,7 @@
 
         if (event instanceof cc.Event.EventTouch) {
             if (event.type == "touchend") {
-                AudioMgr.PlaySound(GameConst.UISOUND.TOUCH_SFX);
+                AudioMgr.PlaySound(UserConst.UISOUND.TOUCH_SFX);
             }
         }
         cc.Component.EventHandler._emitEvents.apply(this, arguments);

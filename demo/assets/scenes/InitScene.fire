@@ -947,6 +947,16 @@
       "__id__": 5
     },
     "_enabled": true,
+    "bgm": {
+      "__uuid__": "e28d5db3-4c43-4b5e-a4b1-06d3b217d039"
+    },
+    "prevSceneName": "",
+    "nextSceneName": "lottery_main",
+    "isCloudIn": true,
+    "isCloudOff": false,
+    "cloudPrefab": {
+      "__uuid__": "fb30da6b-ddcb-4003-a020-3a3c57635452"
+    },
     "img_logo": {
       "__id__": 9
     },

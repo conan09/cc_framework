@@ -13,27 +13,18 @@ UIKit.LoadRes = function(url, type, callback){
 }
 
 /**
- * 加载替换单独的贴图资源
- * @param {string} url 相对于resouces目录路径
+ * @param {Array} preLoadList 预加载列表
+ * @param {function} prodFunc 当前完成的进度
+ * @param {function} completeFunc 预加载结束回调
  */
-cc.Sprite.prototype.SetImage = function(url){
-    if(url){
-        UIKit.LoadRes(url, cc.SpriteFrame, (err, frame) => {
-            this.spriteFrame = frame;
-        });
-    }
-}
-
-/**
- * 
- * @param {atlasFile} atlasFile 图集资源（相对于resources目录）
- * @param {image} image 图片名
- */
-cc.Sprite.prototype.SetImageInfo = function(atlasFile, image){
-    if(atlasFile && image){
-        UIKit.LoadRes(atlasFile, cc.SpriteAtlas, (err, atlas) => {
-            let frame = atlas.getSpriteFrame(image);
-            this.spriteFrame = frame;
-        });
-    }
+UIKit.PreLoadRes = function(preLoadList, prodFunc, completeFunc){
+    cc.loader.loadResArray(preLoadList, (completedCount, totalCount, resList) => {
+       if(prodFunc){
+           prodFunc(completedCount, totalCount, resList);
+       }
+    }, (err, resList) => {
+       if(completeFunc){
+           completeFunc(err, resList);
+       }
+    })
 }

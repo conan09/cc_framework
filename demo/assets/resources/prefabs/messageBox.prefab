@@ -188,7 +188,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "5fcavjuDlO2r0ZndK5H/Eb"
+    "_id": "b7NiIyjCJA7ojSrbthRejs"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -287,7 +287,7 @@
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 2,
-    "_id": "f6S38/JyRMyreCVs/+XPRe"
+    "_id": "83zplG6NJNrru4EDSXBxDw"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -386,7 +386,7 @@
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 2,
-    "_id": "6eIpa+Q2ZAP5qCRgohhNbd"
+    "_id": "dazKGCtFFBnatWYf3PhLUu"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -485,7 +485,7 @@
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
-    "_id": "79D0xYFsZBMbjRH1z5UB9E"
+    "_id": "99zxogHxZCFpsw50gdbbVM"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -590,7 +590,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "3cCyDXJQhCGoAMkl0virbN"
+    "_id": "b2SvkbaCJEFYKdVvg99/td"
   },
   {
     "__type__": "cc.Button",
@@ -659,7 +659,7 @@
     "_N$target": {
       "__id__": 14
     },
-    "_id": "c03yRDEJBGZa2ourtUY0Dj"
+    "_id": "79/aOn3SpGyIImURn9GmjT"
   },
   {
     "__type__": "cc.ClickEvent",
@@ -707,7 +707,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "b88e/m2YlBRYwC7VW4BQUM"
+    "_id": "8bIhx1FAJP27wd0jwRTdxq"
   },
   {
     "__type__": "cc.Layout",
@@ -739,7 +739,7 @@
     "_N$spacingY": 0,
     "_N$verticalDirection": 1,
     "_N$horizontalDirection": 0,
-    "_id": "83hFySGT9DfIYOKe/u2jQB"
+    "_id": "fe0QF7HOpAE60r11d0EMFJ"
   },
   {
     "__type__": "cc.Widget",
@@ -766,7 +766,7 @@
     "_isAbsVerticalCenter": true,
     "_originalWidth": 0,
     "_originalHeight": 0,
-    "_id": "27PrSbutJPkpZfIfJ5Y4gh"
+    "_id": "9cTMiemkhAZIrH7rUGH1tn"
   },
   {
     "__type__": "cc.Animation",
@@ -786,7 +786,7 @@
       }
     ],
     "playOnLoad": false,
-    "_id": "bclaq3p0tN2bqs3CU94CFC"
+    "_id": "a5GSEAWUhErr6GZQqblAXm"
   },
   {
     "__type__": "1ffb3McZ2tPg7F5MsMCzv+1",
@@ -805,7 +805,7 @@
     "btn_close": {
       "__id__": 16
     },
-    "_id": "80S3K7rJFC4pyUsgtaCqMs"
+    "_id": "58IoZ0SxNCGbSL9742cavm"
   },
   {
     "__type__": "cc.PrefabInfo",

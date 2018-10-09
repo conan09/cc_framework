@@ -27,7 +27,7 @@ AudioMgr.PlayMusic = function(musicType, isLoop/* isLoop = ture*/){
     if(isLoop){
         this.prev_music = this.current_music;
     }
-    Utils.LoadRes(this.bgmPath+musicType, cc.AudioClip, (err, ret)=>{
+    UIKit.LoadRes(this.bgmPath+musicType, cc.AudioClip, (err, ret)=>{
         AudioMgr.StopMusic();
         cc.audioEngine.playMusic(ret, isLoop);
         this.current_music = musicType;
@@ -78,7 +78,7 @@ AudioMgr.PlaySound = function(soundName, isLoop/*false*/){
     if(isLoop == "undefined" || isLoop == null){
         isLoop = false;
     }
-    Utils.LoadRes(this.sfxPath + soundName, cc.AudioClip, (err, ret)=>{
+    UIKit.LoadRes(this.sfxPath + soundName, cc.AudioClip, (err, ret)=>{
         var audioID = cc.audioEngine.playEffect(ret, isLoop);
         return audioID;
     });
