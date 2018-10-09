@@ -1,5 +1,3 @@
-;window.Global = window.Global || {};
-
 //按钮全局添加音效事件
 (function(){
     cc.Component.EventHandler._emitEvents = cc.Component.EventHandler.emitEvents;
@@ -17,9 +15,9 @@
 /**
  * 设计尺寸
  */
-Global.DESIGN_SIZE = cc.view.getDesignResolutionSize();
+;window.DESIGN_SIZE = cc.view.getDesignResolutionSize();
 
 /**
  * 可视区域尺寸
  */
-Global.VISIBLE_SIZE = cc.view.getVisibleSize();
+;window.VISIBLE_SIZE = cc.view.getVisibleSize();
