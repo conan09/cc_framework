@@ -6,6 +6,23 @@
 
  /////////////////////////////////////////////////////////////////////////////////
 
+/*
+* 游戏场景枚举 与UserConst.SceneName一一对应，配合使用
+*/ 
+UserConst.SceneEnum = cc.Enum({
+    None : 0,
+    InitScene : 1,
+    LotteryScene : 2,
+});
+
+UserConst.SceneName = [
+    "None",
+    "InitScene",
+    "lottery_main",
+];
+
+/////////////////////////////////////////////////////////////////////////////////
+
  UserConst.SCENE_ENUM = {
      INIT_SCENE     : "InitScene",
      LOTTERY_MAIN   : "lottery_main",

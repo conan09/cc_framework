@@ -4,6 +4,18 @@
 
  require("../common/UserGlobal");
 
+ let tSceneEnum = cc.Enum({
+     None : 0,
+     InitScene : 1,
+     LotteryScene : 2,
+ })
+
+ let SceneName = [
+     "None",
+     "InitScene",
+     "lottery_main",
+ ]
+
 cc.Class({
     extends: SceneBase,
 
@@ -54,7 +66,7 @@ cc.Class({
         UIKit.PreLoadRes(UserConst.PRELOADLIST[UserConst.SCENE_ENUM.INIT_SCENE], (completedCount, totalCount, resList)=>{
             this.prog_bar.progress = completedCount / totalCount;
         }, (err, resList)=>{
-            this.GotoScene("", UserConst.SCENE_ENUM.LOTTERY_MAIN)
+            this.GotoScene("", SceneName[this.nextSceneName]);
         })
     },
 });

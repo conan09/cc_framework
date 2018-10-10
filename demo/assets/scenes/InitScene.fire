@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.4070464767616192,
-      "y": 0.4070464767616192,
+      "x": 0.27511244377811095,
+      "y": 0.27511244377811095,
       "z": 1
     },
     "_quat": {
@@ -950,10 +950,12 @@
     "bgm": {
       "__uuid__": "e28d5db3-4c43-4b5e-a4b1-06d3b217d039"
     },
-    "prevSceneName": "",
-    "nextSceneName": "lottery_main",
+    "_prevSceneName": "",
+    "_nextSceneName": "lottery_main",
+    "_prescene": 0,
+    "_nextscene": 2,
     "isCloudIn": true,
-    "isCloudOff": false,
+    "isCloudOut": false,
     "cloudPrefab": {
       "__uuid__": "fb30da6b-ddcb-4003-a020-3a3c57635452"
     },

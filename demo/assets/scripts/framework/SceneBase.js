@@ -13,10 +13,48 @@
             default : null,
             type : cc.AudioClip,
         },
-        prevSceneName : "",
-        nextSceneName : "",
+        _prevSceneName : {
+            default : "",
+            visible : false,
+        },
+        _nextSceneName : {
+            default : "",
+            visible : false,
+        },
+        _prescene : {
+            default : UserConst.SceneEnum.None,
+            type : UserConst.SceneEnum,
+            visible : false,
+        },
+        _nextscene : {
+            default : UserConst.SceneEnum.None,
+            type : UserConst.SceneEnum,
+            visible : false,
+        },
+        prevSceneName : {
+            type : UserConst.SceneEnum,
+            set : function(val){
+                this._prescene = val;
+                this._prevSceneName = UserConst.SceneName[val];
+            },
+            get : function(){
+                return this._prescene;
+            },
+        },
+        
+        nextSceneName : {
+            type : UserConst.SceneEnum,
+            set : function(val){
+                this._nextscene = val;
+                this._nextSceneName = UserConst.SceneName[val];
+            },
+            get : function(){
+                return this._nextscene;
+            },
+        },
+
         isCloudIn : false,
-        isCloudOff : false,
+        isCloudOut : false,
         cloudPrefab : cc.Prefab,
     },
 
@@ -46,10 +84,10 @@
     },
 
     BackScene : function(){
-        if(this.prevSceneName){
-            let prevSceneName = this.prevSceneName;
-            cc.director.loadScene(this.prevSceneName, () => {
-                cc.log("Scene [ %s ] loaded success", sceneName);
+        if(this._prevSceneName != "" || this._prevSceneName != "None"){
+            let prevSceneName = this._prevSceneName;
+            cc.director.loadScene(this._prevSceneName, () => {
+                cc.log("Scene [ %s ] loaded success", this._prevSceneName);
                 // this.currentSceneName = prevSceneName;
             })            
         }
